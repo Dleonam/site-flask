@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet">
+    <title>Oswaldo Cruz De Horizontina</title>
+</head>
+<body>
+    <h2>Preencha o formulário</h2>
+    <form action="/Contato" method="post"> 
+        <input type="text" name="nome" placeholder="Nome" /> <br>
+        <input type="text" name="sobre" placeholder="Sobrenome" /> <br>
+        <input type="text" name="idade" placeholder="Idade" /> <br>
+        <input type="text" name="contato" placeholder="Seu Contato" /> <br>
+        <input type="text" name="cidade" placeholder="Cidade" /> <br><br>
+        <textarea class="resizable-textarea" name="reclamacão" placeholder="Reclamação"></textarea> <br>
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
